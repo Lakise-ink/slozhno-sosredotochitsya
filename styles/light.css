@@ -42,7 +42,9 @@
     --background-color: rgba(255, 241, 247, 1);
 
     font-family: var(--font-family);
-    font-weight: var(--font-weight-normal);background-color: var(--background-color);background-image: var(--background-image, url('../../images/cover-image-light.png'));
+    font-weight: var(--font-weight-normal);
+    background-color: var(--background-color);
+    background-image: var(--background-image, url('../../images/cover-image-light.png'));
   }
 
   .header__rec {
@@ -57,10 +59,6 @@
   .decorated-zone::before {
     border-inline-start: 1px solid var(--decor-color);
     border-block-end: 1px solid var(--decor-color);
-  }
-  
-  .header__rec {
-    color: var(--underline-color);
   }
   
   .header__rec::after {
@@ -109,7 +107,7 @@
   
   .link-shadow:focus {
     color: var(--main-text-color);
-    outline: 1px solid var(--decor-color);
+    outline: 1px solid var(--main-text-color);
   }
   
   .footer__title {

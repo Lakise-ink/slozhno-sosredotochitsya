@@ -187,7 +187,7 @@
 
 .link-shadow:focus {
   color: var(--main-text-color);
-  outline: 1px solid var(--decor-color);
+  outline: 1px solid var(--main-text-color);
 }
 
 .picture__text {

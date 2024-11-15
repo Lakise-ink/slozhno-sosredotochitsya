@@ -21,10 +21,6 @@
   --font-weight-normal: 400;
   
   --background-image: url(../images/cover-image-dark.png);--background-color: rgb(0, 1, 43);
-
-
-.theme_dark .header__rec {
-  display: block;
 }
 
 .page {
@@ -58,7 +54,7 @@
 }
 
 .header__theme-menu-button:hover {
-  color: var(--underline-color);
+  color: var(--decor-color);
   border: 1px solid var(--shadow-opacity);
 }
 
@@ -94,11 +90,10 @@
 
 .link-shadow:focus {
   color: var(--main-text-color);
-  outline: 1px solid var(--decor-color);
+  outline: 1px solid var(--main-text-color);
 }
 
 .footer__title {
   color: var(--focus-color);
   text-shadow: 4px 4px 0px var(--underline-color);
-}
 }
