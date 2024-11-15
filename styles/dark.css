@@ -20,7 +20,8 @@
   --font-weight-bold: 700;
   --font-weight-normal: 400;
   
-  --background-image: url(../images/cover-image-dark.png);--background-color: rgb(0, 1, 43);
+  --background-image: url(../images/cover-image-dark.png);
+  --background-color: rgb(0, 1, 43);
 }
 
 .page {
