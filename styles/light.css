@@ -4,9 +4,117 @@
   переключая тему
 */
 
-.page.theme_light {
-  /* сохраните этот селектор в приведённом виде.
-    Так стили написанные ниже будут иметь больший вес,
-    чем стили в медиазапросе предпочтений пользователя
-  */
+.theme_light {
+  --focus-color: rgba(255, 194, 230, 1);
+  --underline-color: rgba(255, 141, 203, 1);
+  --main-text-color: rgba(53, 52, 48, 1);
+  --accent-color: rgba(53, 52, 48, 1);
+  --decor-color: rgba(53, 52, 48, 1);
+  --shadow-opacity: rgba(50, 49, 45, 0.4);
+   
+  --font-family: "IBM Plex Mono", sans-serif;
+  --font-weight-bold: 700;
+  --font-weight-normal: 400;
+  
+  --background-image: url(../images/cover-image-light.png);
+  --background-color: rgba(255, 241, 247, 1);
 }
+
+.theme_light .header__rec {
+  display: none;
+}
+
+@media (prefers-color-scheme: light) {
+
+  .page {
+    --focus-color: rgba(255, 194, 230, 1);
+    --underline-color: rgba(255, 141, 203, 1);
+    --main-text-color: rgba(53, 52, 48, 1);
+    --accent-color: rgba(53, 52, 48, 1);
+    --decor-color: rgba(53, 52, 48, 1);
+    --shadow-opacity: rgba(50, 49, 45, 0.4);
+     
+    --font-family: "IBM Plex Mono", sans-serif;
+    --font-weight-bold: 700;
+    --font-weight-normal: 400;
+    
+    --background-image: url(../images/cover-image-light.png);
+    --background-color: rgba(255, 241, 247, 1);
+
+    font-family: var(--font-family);
+    font-weight: var(--font-weight-normal);background-color: var(--background-color);background-image: var(--background-image, url('../../images/cover-image-light.png'));
+  }
+
+  .header__rec {
+    display: none;
+  }
+ 
+  .decorated-zone::after {
+    border-inline-end: 1px solid var(--decor-color);
+    border-block-start: 1px solid var(--decor-color);
+  }
+  
+  .decorated-zone::before {
+    border-inline-start: 1px solid var(--decor-color);
+    border-block-end: 1px solid var(--decor-color);
+  }
+  
+  .header__rec {
+    color: var(--underline-color);
+  }
+  
+  .header__rec::after {
+    background: var(--underline-color);
+    box-shadow: 0px 0px 4px 2px var(--underline-color);
+  }
+  
+  .header__theme-menu-button {
+    color: var(--decor-color);
+  }
+  
+  .header__theme-menu-button:hover {
+    color: var(--decor-color);
+    border: 1px solid var(--shadow-opacity);
+  }
+  
+  .header__title {
+    color: var(--focus-color);
+    text-shadow: 4px 4px 0 var(--underline-color);
+  }
+  
+  .title-decor {
+    color: var(--accent-color);
+    background-color: var(--underline-color);
+  }
+  
+  .content {
+    background-color: var(--background-color);
+  }
+  
+  .content__title {
+    color: var(--decor-color);
+  }
+  
+  .article__title {
+    color: var(--accent-color);
+  }
+  
+  .article__text {
+    color: var(--main-text-color);
+  }
+  
+  .link-shadow {
+    text-shadow: 2px 2px 0 var(--underline-color);
+  }
+  
+  .link-shadow:focus {
+    color: var(--main-text-color);
+    outline: 1px solid var(--decor-color);
+  }
+  
+  .footer__title {
+    color: var(--focus-color);
+    text-shadow: 4px 4px 0px var(--underline-color);
+  }
+}
+
