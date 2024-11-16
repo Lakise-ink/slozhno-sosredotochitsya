@@ -168,10 +168,6 @@
   font-weight: var(--font-weight-normal);
 }
 
-.standard__article__title {
-  margin: 0 0 10px;
-}
-
 .text_bold {
   font-weight: var(--font-weight-bold);
 }
@@ -381,12 +377,12 @@
     margin-bottom: 10px;
   }
 
-  .content__title {
-    max-width: 314px;
+  .unique__article__title {
+    margin-bottom: 0;
   }
 
-  .standard__article__title {
-    margin-top: -10px;
+  .content__title {
+    max-width: 314px;
   }
   
   .footer__title {
