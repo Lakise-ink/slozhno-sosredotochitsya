@@ -85,10 +85,6 @@
     background-color: var(--underline-color);
   }
   
-  .content {
-    background-color: var(--background-color);
-  }
-  
   .content__title {
     color: var(--decor-color);
   }
@@ -105,14 +101,14 @@
     text-shadow: 2px 2px 0 var(--underline-color);
   }
   
-  .link-shadow:focus {
+  .link-shadow::focus-visible {
     color: var(--main-text-color);
     outline: 1px solid var(--main-text-color);
-  }
+  } 
   
   .footer__title {
     color: var(--focus-color);
-    text-shadow: 4px 4px 0px var(--underline-color);
+    text-shadow: 2px 2px 0px var(--underline-color);
   }
 }
 
